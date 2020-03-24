@@ -47,11 +47,16 @@ h1{
 .title-image{
   width: 50%;
   transform: rotate(25deg);
+  position: absolute;
+  right: 20%;
 }
 
 /*Features*/
 #features{
   padding: 7% 15%;
+  background-color: white;
+  position: relative;
+  z-index: 1;
 }
 
 .feature-box{
@@ -73,5 +78,82 @@ p{
 }
 
 .icon:hover{
-  color: ff4c68;
+  color: #ff4c68;
+}
+
+/*Testimonials*/
+#testimonials{
+
+  text-align: center;
+  background-color: #ef8172;
+  color: white;
+}
+
+.carousel-item{
+    padding: 7% 15%;  /*Makes arrows more outward*/
+}
+h2{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 900;
+  font-size: 3rem;
+  line-height: 1.5;
+}
+
+.testimonial-image{
+  width: 15%;
+  border-radius: 100%; /*Makes circular profile image*/
+  margin: 20px;
+}
+
+#press{
+  background-color: #ef8172;
+  text-align: center;
+  padding-bottom: 3%;
+}
+
+.press-logo{
+  width: 15%;
+  margin: 20px 20px 50px;
+}
+
+#pricing{
+  text-align: center;
+  padding: 100px;
+}
+
+.pricing-columm{
+  margin: 3% 2%;
+}
+
+@media (max-width: 1028px){ /*When our viewport is 1028 px or smaller...*/
+
+  #title{
+    text-align: center;
+  }
+  .title-image{
+    position: static;
+    transform: rotate(0);
+  }
+}
+
+#cta{
+  background-color: #ff4c68;
+  text-align: center;
+  padding: 5% 10%;
+}
+
+h3{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 900;
+  font-size: 3rem;
+  color: white;
+}
+
+footer{
+  padding: 5% 10%;
+  text-align: center;
+}
+
+.footer-icons{
+  margin: 20px 10px;
 }
